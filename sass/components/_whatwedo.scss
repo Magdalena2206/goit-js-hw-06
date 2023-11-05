@@ -1,0 +1,48 @@
+.whatwedo {
+  display: none;
+    justify-content: center;
+    &__heading{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 100%;
+        color: $fontColor;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    @media screen and (min-width: 1200px){
+      .whatwedo {
+        display:block;
+      }
+  }}
+  
+  .photo {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .signature {
+    position: relative;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 370px;
+    height: 294px;
+  }
+  
+  .signature > .signature__heading {
+    color: $backgroundColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    position: absolute;
+    width: 370px;
+    height: 75px;
+    padding-top: 27px;
+    padding-right: 27px;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
