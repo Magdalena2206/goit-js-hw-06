@@ -9,3 +9,4 @@ ingredients.map(ingredient => {
     element.classList.add("item");
     itemEl.push(element);
 })
+list.append(...liArray)
