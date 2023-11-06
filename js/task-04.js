@@ -4,11 +4,11 @@ const btnInc = document.querySelector('button[data-action="increment"]')
 const btnDec = document.querySelector('button[data-action="decrement"]')
 
 btnInc.addEventListener('click', () => {
-    counterValue--
+    counterValue++
     displayContent.textContent = counterValue
 }
 )
 btnDec.addEventListener('click', () => {
-    counterValue++
+    counterValue--
     displayContent.textContent = counterValue
 })
