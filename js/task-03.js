@@ -15,15 +15,15 @@ const images = [
   },
 ];
 
-const list = document.querySelector(".gallery");
+const list = document.querySelector('.gallery');
 const markup = images
   .map(
     image => `<li><img class="picture"src=${image.url} width = '400' alt='${image.alt}'></img></li>`
   )
   .join("");
-list.insertAdjacentHTML("beforeend", markup);
+list.insertAdjacentHTML("beforeend", markup)
 
-const pictures = document.querySelectorAll(".picture");
+const pictures = document.querySelectorAll('.picture');
 
 list.style.display = "flex";
 list.style.flexWrap = "column-reverse";
