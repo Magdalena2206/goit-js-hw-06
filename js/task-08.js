@@ -2,7 +2,7 @@ const loginForm = document.querySelector('.login-form')
 
 loginForm.addEventListener('submit', formSubmit)
 
-const formSubmit = placeholder => {
+function formSubmit (placeholder) {
     placeholder.preventDefault()
     const {
         elements: { email, password },
