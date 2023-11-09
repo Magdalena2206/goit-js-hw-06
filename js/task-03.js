@@ -1,4 +1,4 @@
-import { ingredientsRef, itemsRef } from "./task-02";
+
 
 const images = [
   {
@@ -18,12 +18,12 @@ const images = [
 const list = document.querySelector('.gallery');
 const markup = images
   .map(
-    image => `<li><img class="picture"src=${image.url} width = '400' alt='${image.alt}'></img></li>`
+    image => `<li><img class="picture"src=${image.url} width = '400' height ='250' alt='${image.alt}'></img></li>`
   )
   .join("");
 list.insertAdjacentHTML("beforeend", markup)
 
-const pictures = document.querySelectorAll('.picture');
+const scr = document.querySelectorAll('.picture');
 
 list.style.display = "flex";
 list.style.flexWrap = "column-reverse";
